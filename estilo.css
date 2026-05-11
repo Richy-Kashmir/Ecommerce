@@ -1,0 +1,266 @@
+/* ==== Variables de color ==== */
+:root {
+    --primary: #163AA1;      /* azul principal */
+    --secondary: #292F40;    /* gris oscuro */
+    --accent: #ff9800;       /* naranja para botones de acción */
+    --light: #f5f5f5;
+    --white: #ffffff;
+    --dark: #333333;
+}
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light);
+    color: var(--dark);
+}
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+.contenido {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.cabecera {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem 0;
+}
+.PorDefecto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    height: 40px;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.main-nav a {
+    color: var(--white);
+    font-weight: 500;
+}
+.acciones {
+    display: flex;
+    gap: 1rem;
+}
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn-uno {
+    background-color: var(--accent);
+    color: var(--white);
+}
+.btn-uno:hover {
+    background-color: #e68900;
+}
+.btn-dos {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+.btn-dos:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+
+
+
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: var(--white);
+    text-align: center;
+    padding: 6rem 0;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+.rasgo-productos {
+    padding: 3rem 0;
+}
+.rasgo-productos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+}
+
+
+
+
+.productos-grid,
+#productosGrid,
+#cartItems {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.product-card {
+    background: var(--white);
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform .2s;
+}
+.product-card:hover {
+    transform: translateY(-4px);
+}
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.product-card .product-info {
+    padding: 0.8rem;
+}
+.product-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+.product-card .price {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+
+
+
+.productos-filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.productos-filtros label {
+    font-weight: 600;
+}
+.productos-filtros select {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+.product-detail .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-image {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+#productTitle {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+    color: var(--secondary);
+}
+#productPrice {
+    margin: 0.8rem 0;
+}
+.price-value {
+    color: var(--primary);
+    font-weight: bold;
+}
+.product-actions {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+#qtySelect {
+    padding: 0.4rem;
+}
+
+
+
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+#cartItems {
+    flex: 3;
+}
+#cartItems div {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-summary {
+    flex: 1;
+    text-align: right;
+}
+.cart-summary p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.site-footer {
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .hero {
+        padding: 4rem 0;
+    }
+}

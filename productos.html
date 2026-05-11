@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumentos – Tienda</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="cabecera">
+    <div class="contenido PorDefecto">
+        <a href="index.html" class="logo"><img src="logo.png" alt="Logo"></a>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Instrumentos</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="acciones">
+            <button class="btn btn-uno" id="searchBtn">Buscar</button>
+            <button class="btn btn-dos" id="cartIcon">🛒 Carrito</button>
+        </div>
+    </div>
+</header>
+
+
+
+<section class="productos-filtros contenido">
+    <label for="categoriaFiltro">Categoría:</label>
+    <select id="categoriaFiltro">
+        <option value="todos">Todos</option>
+        <option value="cuerdas">Cuerdas</option>
+        <option value="teclado">Teclado</option>
+        <option value="percusión">Percusión</option>
+        <option value="acústico">Acústico</option>
+    </select>
+
+    <label for="sortOption">Ordenar por:</label>
+    <select id="sortOption">
+        <option value="precio-asc">Precio bajo → alto</option>
+        <option value="precio-desc">Precio alto → bajo</option>
+        <option value="nombre">Nombre</option>
+    </select>
+
+    <button class="btn btn-primary" id="filterBtn">Aplicar filtros</button>
+</section>
+
+
+
+<section class="productos-grid contenido" id="productosGrid">
+
+</section>
+
+<footer class="site-footer">
+    <div class="contenido footer-inner">
+        <p>&copy; 2025 Tienda de Instrumentos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
