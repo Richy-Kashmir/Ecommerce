@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle – {{Nombre del instrumento}} | Tienda</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Detalle – Instrumento | Tienda</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
-<header class="site-header">
-    <div class="container header-inner">
-        <a href="index.html" class="logo"><img src="logo.png" alt="Logo"></a>
+<header class="cabecera">
+    <div class="contenido PorDefecto">
+        <a href="index.html" class="logo"><img src="Imagenes/Logo.png" alt="Logo Harmonic Studio"></a>
 
         <nav class="main-nav">
             <ul>
@@ -21,35 +21,34 @@
             </ul>
         </nav>
 
-        <div class="header-actions">
-            <button class="btn btn-primary" id="searchBtn">Buscar</button>
-            <button class="btn btn-secondary" id="cartIcon">🛒 Carrito</button>
+        <div class="acciones">
+            <button class="btn btn-uno" id="searchBtn">Buscar</button>
+            <button class="btn btn-dos" id="cartIcon">🛒 Carrito</button>
         </div>
     </div>
 </header>
 
-<!-- ==== Detalle del producto ==== -->
-<section class="product-detail container">
+<section class="product-detail contenido">
     <div class="product-info">
         <img id="productImg" src="" alt="Imagen del instrumento" class="product-image">
-        <h2 id="productTitle"></h2>
+        <h2 id="productTitle">Producto</h2>
         <p id="productCategory"></p>
         <p id="productPrice">Precio: $<span class="price-value"></span></p>
 
         <div class="product-actions">
             <label for="qtySelect">Cantidad:</label>
             <select id="qtySelect">
-                <!-- opciones generadas dinámicamente -->
+                <!-- opciones generadas por script.js -->
             </select>
 
-            <button class="btn btn-primary" id="addToCartBtn">Añadir al carrito</button>
+            <button class="btn btn-uno" id="addToCartBtn">Añadir al carrito</button>
         </div>
     </div>
 </section>
 
 <footer class="site-footer">
-    <div class="container footer-inner">
-        <p>&copy; 2025 Tienda de Instrumentos. Todos los derechos reservados.</p>
+    <div class="contenido footer-inner">
+        <p>&copy; 2026 Harmonic Studio. Todos los derechos reservados.</p>
     </div>
 </footer>
 
