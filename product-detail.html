@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle – {{Nombre del instrumento}} | Tienda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo"><img src="logo.png" alt="Logo"></a>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Instrumentos</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="btn btn-primary" id="searchBtn">Buscar</button>
+            <button class="btn btn-secondary" id="cartIcon">🛒 Carrito</button>
+        </div>
+    </div>
+</header>
+
+<!-- ==== Detalle del producto ==== -->
+<section class="product-detail container">
+    <div class="product-info">
+        <img id="productImg" src="" alt="Imagen del instrumento" class="product-image">
+        <h2 id="productTitle"></h2>
+        <p id="productCategory"></p>
+        <p id="productPrice">Precio: $<span class="price-value"></span></p>
+
+        <div class="product-actions">
+            <label for="qtySelect">Cantidad:</label>
+            <select id="qtySelect">
+                <!-- opciones generadas dinámicamente -->
+            </select>
+
+            <button class="btn btn-primary" id="addToCartBtn">Añadir al carrito</button>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; 2025 Tienda de Instrumentos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

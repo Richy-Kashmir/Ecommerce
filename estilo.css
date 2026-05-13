@@ -107,6 +107,12 @@ a {
 }
 
 
+.hero .contenido h1,
+.hero .contenido p {
+    color: #000000 !important;
+}
+
+
 
 
 .rasgo-productos {
