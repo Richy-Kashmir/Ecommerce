@@ -1,16 +1,25 @@
 
 const productos = [
     { 
-        id: "guitarra1", nombre: "Guitarra Acústica", categoria: "cuerdas", precio: 899, img: "https://via.placeholder.com/150?text=Guitarra" 
+        id: "guitarra1", nombre: "Guitarra Acústica", categoria: "cuerdas", precio: 899, img: "https://www.laguitarreria.es/7073-large_default/guitarra-clasica-valencia-vc104-4-4-modelo-brillo.jpg" 
     },
     { 
-        id: "piano1",   nombre: "Piano Eléctrico", categoria: "teclado", precio: 599, img: "https://via.placeholder.com/150?text=Piano" },
+        id: "piano1",   nombre: "Piano Eléctrico", categoria: "teclado", precio: 599, img: "https://static.bax-shop.es/image/product/1023619/3872743/6e5c26eb/1664874834yamaha_P-S500BK_1.jpg" },
     { 
-        id: "caja1",    nombre: "Caja de Percusión", categoria: "percusión", precio: 120, img: "https://via.placeholder.com/150?text=Caja" },
+        id: "caja1",    nombre: "Caja de Percusión", categoria: "percusión", precio: 120, img: "https://www.tamtampercusion.com/12386-superlarge_default/yamaha-ms9314ch-caja-marching-blanca.jpg" },
     { 
-        id: "guitarra2",nombre: "Guitarra Eléctrica", categoria: "cuerdas", precio: 699, img: "https://via.placeholder.com/150?text=GuitarraE" },
+        id: "guitarra2",nombre: "Guitarra Eléctrica", categoria: "cuerdas", precio: 699, img: "https://r2.gear4music.com/media/11/119626/600/preview.jpg" },
     { 
-        id: "teclado1", nombre: "Teclado MIDI", categoria: "teclado", precio: 350, img: "https://via.placeholder.com/150?text=Teclado" },
+        id: "teclado1", nombre: "Teclado MIDI", categoria: "teclado", precio: 350, img: "https://drunkat.es/upload/productos/800x800/arturia_minilab-3-black_1.jpg" },
+        {
+            id: "bateria1", nombre: "Batería", categoria: "percusión", precio: 499, img: "https://img.vevorstatic.com/es%2FWJTJZG5JT22HFIWG5V0%2Fgoods_img-v2%2Fdrum-set-m100-1.2.jpg?timestamp=1716800022000&format=webp&format=webp"
+        },
+        {
+                id: "bajo", nombre: "Bajo Eléctrico", categoria: "cuerdas", precio: 450, img: "https://www.musicalpontevedra.es/63698-thickbox_default/bajo-electrico-mini-flight-rock-lite-negro.jpg"
+        },
+        {
+            id: "saxofon1", nombre: "Saxofón", categoria: "viento", precio: 299, img: "https://tempomusica.com/357-large_default/saxofon-alto-yamaha-62.jpg"
+        }
 ];
 
 
